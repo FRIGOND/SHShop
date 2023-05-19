@@ -1,0 +1,941 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+/* All page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #191919;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: green;
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: darkgreen;
+}
+
+/* Mobile Nav */
+
+.menu {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+    width: 100%;
+}
+
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #0088a9;
+}
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
+}
+
+.img_navbar_logo{
+    height: 73px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* First View */
+
+
+.sgogseg {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.sgogseg h1{
+    text-align: center;
+    font-size: 50px;
+}
+.sgogseg a{
+    position: relative;
+    text-decoration: none;
+}
+.sgogseg a::after {
+    content: '';
+    height: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    background: #EFEFEF;
+    z-index: -1;
+}
+.sgogseg1{
+    color: #F18F01;
+    padding-right: 3px;
+}
+.sgogseg2{
+    color: #006400;
+    padding-right: 9px;
+}
+.sgogseg3{
+    color: #F18F01;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nijsrg{
+
+    margin: 0px 250px 0px 250px;
+    border: 3px solid #FEFAFA;;
+    background-color: #FEFAFA;;
+    border-radius: 24px;
+
+}
+.serzg{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.serzg h1{
+    text-align: center;
+    font-size: 40px;
+    color: #E85A5A;
+    padding-bottom: 4px;
+}
+
+
+
+
+
+.sdrherhg{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sdrherhg h2{
+    text-align: center;
+    font-size: 30px;
+    color: #761C1C;
+    text-decoration: #E85A5A underline;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+.zreghgrze{
+    margin: 0px 450px 0px 450px;
+    display: flex;
+    flex-direction: column;
+}
+.zreghgrze p{
+    font-size: 31px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.fgtjnh{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.ehrthyu{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+.erdgh{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.sezpjkioj{
+    font-size: 50px;
+    color: #F18F01;
+    padding-right: 4px;
+}
+
+
+
+
+.dthftdyj{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.dthftdyj p{
+    font-size: 31px;
+    font-weight: bold;
+    text-align: center;
+}
+.serdgs{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.drhddrh{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drhddrh h2{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 45px;
+    color: #2DB94F;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Second floor */
+
+
+.fllycolorsecondfloor{
+    display: flex;
+    flex-direction: column;
+}
+
+.eszkzrgj{
+    background-color: #2DB94F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eszkzrgj1{
+    width: 100%;
+    background-color: #2EBC50;
+    border-radius: 24px;
+    margin: 20px;
+    padding: 20px;
+}
+.eszkzrgj2{
+    width: 100%;
+    background-color: #2EBC50;
+    border-radius: 24px;
+    margin: 20px;
+    padding: 20px;
+}
+.rdehhdrth{
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eszkzrgj h2{
+    font-size: 28px;
+    color: white;
+}
+.eszkzrgj p{
+    text-align: center;
+    font-size: 19px;
+}
+.eszkzrgj a{
+    position: relative;
+    text-decoration: none;
+}
+.eszkzrgj a::after{
+    content: '';
+    height: 9%;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    background: #EFEFEF;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.spacemethodcassos{
+    content: '';
+    height: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: black;
+    margin: 35px 13em 35px 13em;
+}
+
+
+
+
+
+
+
+
+
+
+.srhdrhd{
+    padding-top: 100px;
+    background-color: #2DB94F;
+}
+
+.erhg451{
+    display: flex;
+    margin: 45px;
+}
+
+.erhg451 img{
+    height: 175px;
+}
+
+.edrezsgp h1{
+    color: white;
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.edrezsgp p{
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.forfinalfloor{
+    background-color: #2DB94F;
+    position: relative;
+    top: -130px;
+    z-index: -1;
+}
+.forfinalfloor svg{
+    position: relative;
+    top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.finalfloorshop{
+    background-color: #28C14D;
+    height: 175px;
+}
+.services{
+    background-color: #28C14D;
+    position: relative;
+    top: -130px;
+    height: 300px;
+}
+.services h1{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.services p{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.allbuttonshop{
+    height: 100%;
+    font-weight: 400;
+}
+.containerbutton{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 32px;
+}
+
+.buttons a{
+    z-index: 1;
+}
+
+.btn-2 {
+    color: #000;
+    transition: color 0.5s ease 0s;
+}
+
+.btn-2::after,
+.btn-2::before {
+    border: 3px solid #000;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+
+}
+
+.btn-2:hover::after {
+    transform: translate(-5px, -5px);
+    background-color: black;
+}
+
+.btn-2:hover::before {
+    transform: translate(5px, 5px);
+    background-color: black;
+}
+
+.buttons a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Payment */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Avis */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Discord */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.svgbackcolor{
+    background-color: #28C14D;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: #008000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottomfooter{
+    background: #008000;
+    padding-bottom: 5px;
+    position: relative;
+    top: -8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footerline85{
+    display: flex;
+}
+
+.img-footer{
+    height: 200px;
+    clip-path:ellipse(50% 50%);
+}
+
+
+
+
+.footer-left{
+    width: 20%;
+}
+
+.eqsf56esqzf{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+.footer-right{
+    width: 80%;
+}
+
+.footer-right h1{
+    padding-left: 15%;
+    color: white;
+    font-size: 45px;
+    text-decoration: white underline;
+    padding-bottom: 5px;
+}
+
+.footer-right p{
+    padding-top: 5px;
+    padding-left: 21%;
+    font-size: 18px;
+}
+
+.footer-right h3{
+    padding-top: 19px;
+    padding-left: 30%;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.eszqfgszegsz{
+    padding-top: 120px;
+    padding-left: 1px;
+}
+.eszqfgszegsz p{
+    font-size: 15px;
+}
+.footer-bottom{
+    padding-left: 5px;
+}
+.footer-bottom h2{
+    font-size: 20px;
+}
